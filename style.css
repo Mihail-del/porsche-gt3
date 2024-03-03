@@ -1,0 +1,1288 @@
+@font-face{
+    font-family: AudiFont;
+    src: url(fonts/AudiFont.ttf);
+}
+
+@font-face{
+    font-family: PorscheSimple;
+    src: url(fonts/911porschav3.ttf);
+}
+
+@font-face{
+    font-family: PorscheLaser;
+    src: url(fonts/911porschav3laser.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background: #ddd;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: AudiFont, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth
+}
+
+/*------------------------Mobile S------------------------*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    font-weight: 500;
+}
+
+.header-logo{
+    height: 90%;
+    padding: 3px 15px;
+}
+
+.dropdown-header-menu{
+    text-align: right;
+}
+
+.dropdown-header-menu-btn{
+    height: 30px;
+    margin: 15px;
+}
+
+.dropdown-header-menu:hover .dropdown-header-menu-child{
+    display: flex;
+}
+
+.dropdown-header-menu-child{
+    display: none;
+    text-align: left;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    background: #ccc;
+}
+
+.dropdown-header-menu-child a{
+    color: black;
+    text-decoration: none;
+    padding: 3px 0px;
+}
+
+.inline-header-menu{
+    display: none;
+}
+
+
+
+
+.Features{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.Features h1{
+    font-family: PorscheLaser, sans-serif;
+    margin: 20px 0px 20px 5%;
+    font-size: 42px;
+    width: 100%;
+}
+
+.Features h2{
+    font-family: PorscheSimple, sans-serif;
+    font-size: 36px;
+}
+
+.features-info{
+    width: 92%;
+    padding: 1% 0px 1% 30px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.features-info p{
+    margin: 0px;
+}
+
+.features-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-card1, .features-card2, .features-card3, .features-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.features-card1:hover, .features-card2:hover, .features-card3:hover, .features-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(-1deg) scale(1.1);
+    z-index: 3;
+}
+
+.features-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.features-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.features-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.features-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.features-info-cards img{
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+.features-animation-frame{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.features-animation-frame-img{
+    width: 80%;
+    padding: 0px 10%;
+    transition: 0.7s;
+}
+
+.features-animation-frame:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+.Engine{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.Engine h2{
+    font-family: PorscheSimple;
+    margin: 20px 0px;
+    font-size: 42px;
+    text-align: right;
+    width: 90%;
+}
+
+.Engine h3{
+    font-size: 24px;
+    text-align: right;
+    width: 90%;
+}
+
+.engine-info{
+    width: 92%;
+    padding: 1% 0px 1% 30px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.engine-info p{
+    margin: 0px;
+}
+
+.engine-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.engine-card1, .engine-card2, .engine-card3, .engine-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.engine-card1:hover, .engine-card2:hover, .engine-card3:hover, .engine-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(1deg) scale(1.1);
+    z-index: 3;
+}
+
+.engine-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.engine-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.engine-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.engine-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.engine-animation-frame{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.engine-animation-frame-img{
+    width: 80%;
+    padding: 0px 10%;
+    transition: 0.7s;
+}
+
+.engine-animation-frame:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+.Comfort{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.Comfort h2{
+    font-family: PorscheSimple, sans-serif;
+    margin: 20px 20px;
+    font-size: 42px;
+    text-align: left;
+    width: 90%;
+}
+
+.Comfort h3{
+    font-size: 24px;
+    text-align: left;
+    width: 90%;
+    margin: 0px 20px;
+}
+
+.comfort-info{
+    width: 92%;
+    padding: 1% 0px 1% 0px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.comfort-info p{
+    margin: 0px;
+}
+
+.comfort-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.comfort-card1, .comfort-card2, .comfort-card3, .comfort-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.comfort-card1:hover, .comfort-card2:hover, .comfort-card3:hover, .comfort-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(-1deg) scale(1.1);
+    z-index: 3;
+}
+
+.comfort-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.comfort-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.comfort-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.comfort-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.comfort-info-cards img{
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+.comfort-animation-frame{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.comfort-animation-frame-img{
+    width: 80%;
+    margin: 0px 10%;
+    transition: 0.7s;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+.Design{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.Design h2{
+    font-family: PorscheSimple, sans-serif;
+    margin: 20px 0px;
+    font-size: 42px;
+    text-align: right;
+    width: 90%;
+}
+
+.Design h3{
+    font-size: 24px;
+    text-align: right;
+    width: 90%;
+}
+
+.design-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.design-front, .design-back{
+    overflow: hidden;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    padding: 10px 30px;
+    margin: 2%;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.design-front:hover, .design-back:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    z-index: 3;
+}
+
+.design-front:hover img, .design-back:hover img{
+    transform: scale(1.1);
+}
+
+.design-front h4, .design-back h4{
+    font-size: 36px;
+    font-family: PorscheSimple, sans-serif;
+    padding: 10px 10px 0px 10px;
+}
+
+.design-front img, .design-back img{
+    width: 60%;
+    padding: 30px 20%;
+    transition: 0.5s;
+}
+
+
+.Exclusive{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.Exclusive h2{
+    font-family: PorscheSimple, sans-serif;
+    margin: 20px 20px;
+    font-size: 32px;
+    text-align: left;
+    width: 90%;
+}
+
+.Exclusive h3{
+    font-size: 21px;
+    text-align: left;
+    width: 90%;
+    margin: 0px 20px;
+}
+
+.exclusive-info{
+    width: 92%;
+    padding: 1% 0px 1% 0px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.exclusive-info p{
+    margin: 0px;
+}
+
+.exclusive-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exclusive-card1, .exclusive-card2, .exclusive-card3, .exclusive-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.exclusive-card1:hover, .exclusive-card2:hover, .exclusive-card3:hover, .exclusive-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(-1deg) scale(1.1);
+    z-index: 3;
+}
+
+.exclusive-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.exclusive-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.exclusive-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.exclusive-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.exclusive-info-cards img{
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+
+hr{
+    margin: 80px 0px 20px 0px;
+}
+
+footer{
+    text-align: left;
+    width: 100%;
+}
+
+footer h1{
+    font-family: PorscheSimple;
+    font-size: 24px;
+    padding: 5px 10px;
+    margin: 0px;
+}
+
+footer h2{
+    font-size: 21px;
+    padding: 5px 10px;
+    margin: 0px;
+}
+
+
+}
+
+/*------------------------Mobile L------------------------*/
+@media(min-width: 425px){
+
+}
+
+
+/*------------------------Tablet------------------------*/
+@media(min-width: 768px){
+
+.Features h1{
+    font-size: 54px;
+}
+
+.design-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Exclusive h2{
+    font-size: 42px;
+}
+
+}
+
+
+/*------------------------Laptop S------------------------*/
+@media(min-width: 1024px){
+
+header{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header-logo{
+    height: 90%;
+    padding: 5px 30px;
+}
+
+.header-logo{
+    height: 90%;
+    padding: 2px 15px;
+}
+
+.dropdown-header-menu{
+    display: none;
+}
+
+.inline-header-menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.inline-header-menu a{
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.inline-header-menu a {
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.inline-header-menu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.inline-header-menu a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+
+
+.Features{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.Features h1{
+    margin: 20px 0px 20px 5%;
+    font-size: 96px;
+    width: 100%;
+}
+
+.Features h2{
+    font-family: PorscheSimple;
+    margin: 20px 0px;
+    font-size: 64px;
+    width: 100%;
+}
+
+.Features h3{
+    font-size: 36px;
+    width: 100%;
+}
+
+.features-info {
+    margin: 0px;
+    width: 40%;
+    padding: 30px;
+    font-size: 22px;
+    transition: opacity 2s;
+}
+
+.features-animation-info {
+    opacity: 1
+}
+
+.features-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-info-cards img{
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.features-card1, .features-card2, .features-card3, .features-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 40%;
+    padding: 15px;
+    margin: 1%;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.features-card1:hover, .features-card2:hover, .features-card3:hover, .features-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(-1deg) scale(1.1);
+    z-index: 3;
+}
+
+.features-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.features-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.features-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.features-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.features-animation-frame{
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.features-animation-frame-img{
+    width: 100%;
+    padding: 0px;
+    transition: 1s;
+    transform: translateX(20px);
+}
+
+.features-animation-frame-img-anim{
+    transform: translateX(-30px);
+}
+
+
+
+
+
+.Engine{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.Engine h2{
+    font-family: PorscheSimple;
+    margin: 20px 0px;
+    font-size: 64px;
+    text-align: right;
+    width: 90%;
+}
+
+.Engine h3{
+    font-size: 42px;
+    text-align: right;
+    width: 90%;
+}
+
+
+.engine-h2, .engine-h3{
+    transition: 1s ease-out;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.engine-info {
+    display: flex;
+    justify-content: end;
+    margin: 0px;
+    width: 60%;
+    padding: 30px;
+    font-size: 22px;
+}
+
+.engine-animation-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.engine-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.engine-card1, .engine-card2, .engine-card3, .engine-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 40%;
+    padding: 15px;
+    margin: 1%;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.engine-card1:hover, .engine-card2:hover, .engine-card3:hover, .engine-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(1deg) scale(1.1);
+    z-index: 3;
+}
+
+.engine-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.engine-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.engine-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.engine-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+
+
+.engine-animation-frame{
+    width: 30%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.engine-animation-frame-img{
+    width: 100%;
+    padding: 0px;
+    transition: 2s;
+    opacity: 0.1;
+}
+
+.engine-animation-frame-img-anim{
+    opacity: 1;
+}
+
+
+.Comfort{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.Comfort h2{
+    font-family: PorscheSimple;
+    margin: 20px 0px;
+    font-size: 64px;
+    text-align: left;
+    width: 90%;
+}
+
+.Comfort h3{
+    font-size: 42px;
+    text-align: left;
+    width: 90%;
+}
+
+.comfort-h2, .comfort-h3{
+    transition: 1s ease-out;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.comfort-info {
+    margin: 0px;
+    width: 40%;
+    padding: 30px;
+    font-size: 22px;
+    transition: opacity 2s;
+}
+
+.comfort-animation-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.comfort-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comfort-info-cards img{
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.comfort-card1, .comfort-card2, .comfort-card3, .comfort-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 40%;
+    padding: 15px;
+    margin: 1%;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.comfort-card1:hover, .comfort-card2:hover, .comfort-card3:hover, .comfort-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(-1deg) scale(1.1);
+    z-index: 3;
+}
+
+.comfort-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.comfort-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.comfort-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.comfort-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.comfort-animation-frame{
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.comfort-animation-frame-img{
+    width: 100%;
+    padding: 0px;
+    transition: 1s;
+}
+
+
+
+.Design h2{
+    margin: 20px 0px;
+    font-size: 64px;
+    text-align: right;
+    width: 90%;
+}
+
+.Design h3{
+    font-size: 42px;
+    text-align: right;
+    width: 90%;
+}
+
+.design-h2, .design-h3{
+    transition: 1s ease-out;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.design-animation-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.design-cards{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.design-front, .design-back{
+    width: 45%;
+}
+
+.design-front{
+    transform: translateX(-20%) translateY(-150px) scale(0.4);
+}
+
+.design-back{
+    transform: translateX(20%) translateY(-150px) scale(0.4);
+}
+
+.design-front-back-animation{
+    transform: none;
+}
+
+
+.Exclusive{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.Exclusive h2{
+    font-family: PorscheSimple;
+    margin: 20px 0px;
+    font-size: 64px;
+    text-align: left;
+    width: 90%;
+}
+
+.Exclusive h3{
+    font-size: 24px;
+    text-align: left;
+    width: 90%;
+}
+
+.exclusive-h2, .exclusive-h3{
+    transition: 1s ease-out;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.exclusive-info {
+    margin: 0px;
+    width: 100%;
+    padding: 30px;
+    font-size: 22px;
+    transition: opacity 2s;
+}
+
+.exclusive-animation-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.exclusive-info-cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exclusive-info-cards img{
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.exclusive-card1, .exclusive-card2, .exclusive-card3, .exclusive-card4{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    width: 40%;
+    padding: 15px;
+    margin: 1%;
+    opacity: 1;
+    transform: translateX(-150px);
+}
+
+.exclusive-card1:hover, .exclusive-card2:hover, .exclusive-card3:hover, .exclusive-card4:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    transform: rotate(-1deg) scale(1.1);
+    z-index: 3;
+}
+
+.exclusive-card1-anim{
+    transition: 1s;
+    transform: none;
+}
+
+
+.exclusive-card2-anim{
+    transition: 1.5s;
+    opacity: 1;
+    transform: none;
+}
+
+.exclusive-card3-anim{
+    transition: 2s;
+    opacity: 1;
+    transform: none;
+}
+
+
+.exclusive-card4-anim{
+    transition: 2.5s;
+    opacity: 1;
+    transform: none;
+}
+
+
+}
+
+
+/*------------------------Laptop L / PC------------------------*/
+@media(min-width: 1440px){
+
+}
+
+/*------------------------4K------------------------*/
+@media(min-width: 2560px){
+
+header{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.inline-header-menu a{
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-size: 48px;
+}
+
+.Features{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+p{
+    font-size: 36px;
+}
+
+}
